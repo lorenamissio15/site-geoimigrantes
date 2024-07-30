@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pg inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--LINK BOOTSTRAP-->
+       <link rel="stylesheet" href="./css/style.css"><!--link CSS-->
+</head>
+
+<body>
+<!--navegador-->
+
+  <nav class="navbar fixed-top" style="background-color:  #0072BC;">
+    <!--<nav>: Define a seção de navegação.
+    class="navbar fixed-top": Aplica estilos de navbar e fixa a posição no topo da página.
+    style="background-color:  #0072BC;": Define o fundo da barra de navegação com a cor  #0072BC.-->
+
+    <div class=" div1 container-fluid">
+        <!--<div>: Define um contêiner genérico.
+        class="container-fluid": Utiliza um contêiner fluido que se expande para preencher toda a largura disponível.-->
+<img src="img/logo2.png" alt="Logo GeoImigrantes" width="130" height="auto" class="d-inline-block">
+        <!--class="d-inline-block": Aplica o estilo para exibir a imagem como um bloco inline.-->
+        
+        <button class="navbar-toggler button2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar de navegação">
+            <!--<button>: Cria um botão.
+            class="navbar-toggler":Aplica estilos para ser um botão de alternância de navbar.
+            type="button": Especifica que é um botão.
+            data-bs-toggle="offcanvas": Define o comportamento do botão para alternar um offcanvas.
+            data-bs-target="#offcanvasNavbar": Especifica o alvo do offcanvas com o ID offcanvasNavbar.
+            aria-controls="offcanvasNavbar" e aria-label="Alternar de navegação": Atributos acessíveis para controle do offcanvas.-->
+            <span class="navbar-toggler-icon"></span></button>
+            <!--<span>: Define um contêiner genérico em linha.
+class="navbar-toggler-icon": Estiliza o ícone do botão de alternância da navbar.-->
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+   <!-- <div>: Define um contêiner offcanvas.
+    class="offcanvas offcanvas-end": Aplica estilos para posicionar o offcanvas à direita.
+    tabindex="-1": Permite o foco do teclado no elemento, mas não por padrão.
+    id="offcanvasNavbar": Define um ID para referência.
+    aria-labelledby="offcanvasNavbarLabel": Associa um rótulo acessível ao offcanvas. ACESSAR O CONTEUDO DO SITE PELO MENU-->
+    <div class="offcanvas-header cabecalhomenu2">
+        <!--<div>: Define um cabeçalho para o offcanvas.
+        class="offcanvas-header": Estiliza o cabeçalho do offcanvas.-->
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            Menu GeoImigrantes
+          </h5>
+          <!--<h5>: Define um cabeçalho de nível 5.
+          class="offcanvas-title": Estiliza o título do offcanvas.
+          id="offcanvasNavbarLabel": Define um ID para referência.-->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button></div>
+          <!--<button>: Cria um botão.
+          type="button": Especifica que é um botão.
+          class="btn-close": Estiliza o botão como um botão de fechar padrão.
+          data-bs-dismiss="offcanvas": Define o comportamento do botão para fechar o offcanvas.
+          aria-label="Fechar": Atributo acessível para ação de fechar.-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                <li class="nav-item  ">
+                    <a class=" nav-link apg fw-semibold" href="paginainicial.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      aria-current="page"
+                      href="Login.html"
+                      >Login</a>
+                      <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sobre nós
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="equipe.html">Equipe</a></li>
+                <li><a class="dropdown-item" href="#">Sobre o projeto</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.ifms.edu.br/campi/campus-dourados" target="_blank">Instituição</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Procurar"
+              aria-label="Procurar"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Procurar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--fim do nav-->
+
+  <h1 class="title"style="margin-top:20vh;margin-left:2vh;">Sobre o Projeto</h1>
+  <hr>
+  <p style="margin-left:2vh;">O projeto Geoimigrantes visa criar uma plataforma digital para auxiliar os imigrantes venezuelanos residentes em Dourados - MS.</p>
+     <p style="margin-left:2vh;">A plataforma será alimentada com dados da Associação de Imigrantes Dunamis Multicultural Dourados e Região, pesquisas bibliográficas e referências de órgãos oficiais de imigração. Serão produzidos vídeos tutoriais em parceria com a Polícia Federal para ajudar no preenchimento de formulários do Documento Provisório de Registro Nacional Migratório (DPRNM) e na emissão de vistos. Além disso, atividades serão realizadas com estudantes venezuelanos na Escola Estadual de Educação em Tempo Integral: Rita Angelina Barbosa Silveira. Os resultados da pesquisa serão divulgados no site do projeto, nas redes sociais e em eventos científicos. O projeto atende ao Art. 2º do Decreto Nº 12.049, de 11 de junho de 2024, que institui o Programa Mais Ciência na Escola para Expansão de Tecnologias Digitais e Experimentação Científica na Educação Básica.</p>
+    <p style="margin-left:2vh;">Uma das principais motivações do projeto Geoimigrantes surge da iniciativa de estudantes do Curso Técnico Integrado ao Ensino Médio de Informática para Internet do IFMS, que começaram a desenvolver plataformas digitais no IFMaker, um ambiente colaborativo que facilita a criação de produtos através de formação complementar em áreas técnicas. Esse grupo de estudantes se aproximou do movimento Maker, que incentiva a produção e modificação de objetos de forma independente. Além disso, uma das estudantes, ao participar do projeto de pesquisa "Direitos Humanos nas Fronteiras", desenvolveu interesse pela temática da imigração. O projeto visa criar uma plataforma digital para apoiar imigrantes venezuelanos em Dourados - MS, e será executado por estudantes do Ensino Médio Integrado no IFMaker do IFMS. A proposta pedagógica do projeto alinha-se com as políticas de permanência e êxito do IFMS, focando na inclusão social e valorização da cultura científica. O público-alvo são estudantes venezuelanos do Ensino Fundamental e Médio. A execução do projeto atenderá ao Decreto Nº 12.049, que institui o Programa Mais Ciência na Escola, visando promover a educação científica e digital, inclusão social, curiosidade científica e valorização dos saberes tradicionais e suas tecnologias.</p>
+   <p style="margin-left:2vh;"> A metodologia utilizada na criação da plataforma é qualitativa, focando na imigração, nos fluxos migratórios e na acolhida dos imigrantes venezuelanos em Dourados. A plataforma Geoimigrantes (www.geoimigrantes.com.br) será criada e mantida por estudantes do Curso Técnico Integrado em Informática para Internet do IFMS Campus Dourados. Inicialmente, o site será hospedado no GitHub Pages, utilizando tecnologias HTML, Bootstrap para CSS e JavaScript. À medida que o site crescer, outras tecnologias como MySQL, Node.js e frameworks adicionais serão incorporadas. As atividades de criação do site e das redes sociais serão realizadas no Espaço Maker do IFMS, supervisionadas por professores do projeto.</p>
+   <p style="margin-left:2vh;"> Após a execução das atividades do projeto Geoimigrantes, espera-se que os agentes públicos aperfeiçoem os atendimentos aos imigrantes venezuelanos. A plataforma facilitará o acesso a informações institucionais para emissão de documentos e acesso a políticas públicas, além de divulgar atrações socioculturais da Associação de Imigrantes Dunamis Multicultural Dourados e Região. Os resultados serão disseminados por meio de relatórios parciais e finais, compartilhados com a Polícia Federal, a Escola Estadual de Educação em Tempo Integral: Rita Angelina Barbosa Silveira, a Associação de Imigrantes Dunamis Multicultural e o IFMS – Campus Dourados, e divulgados no site do IFMS. Além disso, os resultados poderão ser apresentados na FECIGRAN e em outros eventos regionais e nacionais.
+    Até o presente momento, o projeto de pesquisa "Geoimigrantes" avançou nas etapas de execução. Reuniões de acompanhamento síncronas via Google Meet estão sendo realizadas com a Polícia Federal, Associação de Imigrantes Dunamis Multicultural Dourados e Região, e a Escola Estadual de Educação em Tempo Integral: Rita Angelina Barbosa Silveira. Na primeira etapa, a eficácia da parceria entre a Polícia Federal e o IFMS – Campus Dourados será avaliada com base na colaboração e apoio mútuo. Na segunda etapa, os resultados da pesquisa serão apresentados na Feira de Ciência e Tecnologia do IFMS. Na última etapa, a eficácia das atividades de produção dos vídeos, tutoriais e da plataforma será avaliada com base no êxito do atendimento dos imigrantes venezuelanos na Polícia Federal, nas matrículas na escola Rita Angelina, e no panorama das atividades socioculturais da Associação Dunamis apresentadas no site Geoimigrantes.</p>
+    </p>
+    <!-- <img src="img/giovanaelorenaunidas.jpg"style="width: 50%;heigth"> -->
+  <!-- equipe -->
+
+   <!--rodape-->
+   <footer class=" mt-5  container-fluid d-flex"style="background-color: #4B8ECC;">
+    <img src="img/logo.png" alt="Logo" width="60" height="auto" style=" margin-top:2vh;  margin-bottom:2vh; margin-left: 2vh;">
+    <p class="text-light" style=" margin-top:4vh;  margin-left:4vh;">  &copy; 2023 - Desenvolvido por Lorena Missio.<br>IFMS - Campus Dourados </p>
+  </footer>
+    <!--fim-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </body>
+  </html>

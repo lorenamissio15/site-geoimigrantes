@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body >
+    <!-- Example Code -->
+
+    <nav class="navbar fixed-top" style="background-color:  #0072BC;">
+      <div class="container-fluid" style="height: 15vh;">
+        <img src="img/logo2.png"alt="Logo GeoImigrantes"width="130" height="auto"class="d-inline-block">
+        <!--botao de menu-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Alternar de navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--fim botao de menu-->
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header"style="background-color:  #0072BC;">
+            <h5
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+              style="background-color:  #0072BC;"
+            >
+              Projeto GeoImigrantes
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Fechar"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="paginainicial.html">Pagina Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="cadastro.html"
+                  >Cadastro</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sobre nós
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="equipe.html"target="_blank">Equipe</a></li>
+                  <li><a class="dropdown-item" href="projeto.html"target="_blank">Sobre o Projeto</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://www.ifms.edu.br/campi/campus-dourados" target="_blank">Instituição</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Procurar"
+                aria-label="Procurar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Procurar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav> 
+    <!-- fim nav -->
+    
+    <!--formulario de cadastro-->
+     <form class="p-3" style="margin-top: 18vh;">
+
+      <div class="my-3  container-fluid border bg-subtle rounded" id="cadastro">
+        <h5 class="my-3 text-primary">Cadastro</h5><hr/>
+    
+      <div class="class row">
+      <div class="my-3 col">
+      <label class="form-label">Nome:</label>
+      <input class="form-control"type="text" name="f-nome"/>
+    </div>
+
+    <div class="my-3 col">
+      <label class="form-label">Sobrenome:</label>
+      <input class="form-control" type="text" name="f-sobrenome"/>
+    </div>
+  </div>
+
+      <div class="my-3">
+      <label class="form-label">Cpf:</label>
+      <input class="form-control" type="number"name="f-cpf"/>
+      <div id="passwordHelpBlock" class="form-text">
+      Digite seu CPF, não é necessario carácteres especiais.
+       </div>
+    </div>
+
+    <div class="my-3">
+      <label class="form-label">Data de Nascimento:</label>
+      <input class="form-control" type="date" name="f-nascimento"/>
+    </div>
+
+<div class="my-3">
+      <label class="form-label">Telefone:</label>
+      <input class="form-control" type="number"name="f-telefone"/>
+    </div>
+
+     
+
+    
+
+    <!-- localizaçao -->
+<div class=" row">
+      <div class="my-3 col">
+      <label class="form-label">Oriundo de:</label>
+      <input class="form-control" type="text"name="f-local" placeholder="País/Estado"/>
+    </div>
+
+<div class="my-3 col">
+      <label class="form-label">CEP atual:</label>
+      <input class="form-control"type="number" name="f-cep"/>
+      <div id="passwordHelpBlock" class="form-text">
+        Digite seu CEP, não é necessario carácteres especiais.
+         </div>
+    </div>
+  </div>
+
+    <div class="my-3">
+      <label class="form-label">Email:</label>
+      <div class="input-group">
+      <div class="input-group-text">@</div>
+      <input class="form-control" placeholder="Digite seu email" d="inlineFormInputGroupUsername"type="email"name="f-email"/>
+      </div>
+    </div>
+
+    <div class=" my-3">
+      <label class=" form-label"> Senha</label>
+      <input class="form-control"type="password"name="f-senha"
+      <div class="form-text" id="passwordHelpBlock" >
+       Sua senha deve ter entre 8-20 carácteres, conter letras e números, não deve conter espaçoes emojis ou carácteres especiais como(!, $, #).
+      </div>
+    
+
+    <!-- termos de uso -->
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Eu concordo com os termos de uso da plataforma
+        </label>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+    </div>
+    
+
+      <input class="btn btn-primary mt-3 mb-3 " type="submit" name="bnt-cadastrar" value="cadastrar"/>
+    </div>
+    </div>
+     </form>
+<!--rodape-->
+      <footer class=" container-fluid d-flex"style="background-color:  #0072BC;">
+        <img src="img/logo.png" alt="Logo" width="60" height="auto" style=" margin-top:2vh;  margin-bottom:2vh;">
+        <p class="text-light" style=" margin-top:4vh;  margin-left:4vh;">  &copy; 2023 - Desenvolvido por Lorena Missio.<br>IFMS - Campus Dourados </p>
+      </footer>
+
+      <!--fim-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </body>
+</html>

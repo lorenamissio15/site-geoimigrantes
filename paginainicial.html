@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pg inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--LINK BOOTSTRAP-->
+  <link rel="stylesheet" href="./css/style.css"><!--link CSS-->
+</head>
+
+<body>
+  <!--navegador-->
+
+  <nav class="navbar fixed-top" style="background-color:  #0072BC;">
+
+    <div class=" div1 container-fluid">
+      <!--<div>: Define um contêiner genérico.
+        class="container-fluid": Utiliza um contêiner fluido que se expande para preencher toda a largura disponível.-->
+        <img src="img/logo2.png" alt="Logo GeoImigrantes" class="d-inline-block logo">
+      <!--class="d-inline-block": Aplica o estilo para exibir a imagem como um bloco inline.-->
+
+      <button class="navbar-toggler button2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Alternar de navegação">
+        <!--<button>: Cria um botão.
+            class="navbar-toggler":Aplica estilos para ser um botão de alternância de navbar.
+            type="button": Especifica que é um botão.
+            data-bs-toggle="offcanvas": Define o comportamento do botão para alternar um offcanvas.
+            data-bs-target="#offcanvasNavbar": Especifica o alvo do offcanvas com o ID offcanvasNavbar.
+            aria-controls="offcanvasNavbar" e aria-label="Alternar de navegação": Atributos acessíveis para controle do offcanvas.-->
+        <span class="navbar-toggler-icon"></span></button>
+      <!--<span>: Define um contêiner genérico em linha.
+class="navbar-toggler-icon": Estiliza o ícone do botão de alternância da navbar.-->
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- <div>: Define um contêiner offcanvas.
+    class="offcanvas offcanvas-end": Aplica estilos para posicionar o offcanvas à direita.
+    tabindex="-1": Permite o foco do teclado no elemento, mas não por padrão.
+    id="offcanvasNavbar": Define um ID para referência.
+    aria-labelledby="offcanvasNavbarLabel": Associa um rótulo acessível ao offcanvas. ACESSAR O CONTEUDO DO SITE PELO MENU-->
+        <div class="offcanvas-header cabecalhomenu2">
+          <!--<div>: Define um cabeçalho para o offcanvas.
+        class="offcanvas-header": Estiliza o cabeçalho do offcanvas.-->
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            Menu GeoImigrantes
+          </h5>
+          <!--<h5>: Define um cabeçalho de nível 5.
+          class="offcanvas-title": Estiliza o título do offcanvas.
+          id="offcanvasNavbarLabel": Define um ID para referência.-->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <!--<button>: Cria um botão.
+          type="button": Especifica que é um botão.
+          class="btn-close": Estiliza o botão como um botão de fechar padrão.
+          data-bs-dismiss="offcanvas": Define o comportamento do botão para fechar o offcanvas.
+          aria-label="Fechar": Atributo acessível para ação de fechar.-->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item  ">
+              <a class=" nav-link apg fw-semibold" href="index.html" target="_blank">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Login.html" target="_blank">Login</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sobre nós
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="equipe.html" target="_blank">Equipe</a></li>
+                <li><a class="dropdown-item" href="projeto.html" target="_blank">Sobre o projeto</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.ifms.edu.br/campi/campus-dourados"
+                    target="_blank">Instituição</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar" />
+            <button class="btn btn-outline-success" type="submit">
+              Procurar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--fim do nav-->
+
+
+  <div class="row" class="carousel">
+    <div class="col-xg-6 col-lg-6 col-md-12 col-sm-12">
+      <div id="carouselExampleIndicators" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mt-5">
+          <div class="carousel-item active">
+            <img src="img/slide1.png" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.png" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.png" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+    <div class="col-xg-6 col-lg-6 col-md-12 col-sm-12  ">
+      <div class="accordion   " id="accordionPanelsStayOpenExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              Dados Atualizados
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Os dados sobre imigrantes venezuelanos</strong> podem mudar rapidamente, então é importante
+              consultar fontes atualizadas, como relatórios de organizações internacionais (por exemplo, ONU, ACNUR)
+              e estatísticas governamentais dos países anfitriões para obter as informações mais recentes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              Referências e Fontes
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Para informações detalhadas e atualizadas, você pode consultar fontes como:</strong>
+              <ul>
+                <li>ACNUR (Alto Comissariado das Nações Unidas para Refugiados): www.acnur.org</li>
+                <li>OIM (Organização Internacional para as Migrações): www.iom.int</li>
+                <li>Relatórios Governamentais e Estatísticas de Países Anfitriões: Geralmente disponíveis em sites
+                  de ministérios de imigração e de estatísticas nacionais.</li>
+              </ul> Esses dados ajudam a entender melhor as complexidades e os desafios enfrentados pelos imigrantes
+              venezuelanos e a importância de uma resposta coordenada e humanitária.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+  <hr>
+  <!--noticias-->
+  <div class="row row-cols-3 row-cols-md-8 g-5" style="margin-top:2vh; margin-left:2vh;  margin-right:2vh;">
+    <div class="col-12 col-xg-4 col-lg-4 col-md-6 col-sm-12">
+      <!--inicio-->
+      <div class="card h-100">
+        <img src="img/CRAS-JOQUEI-CLUBE-PROJETO-IMIGRANTES-33-800x533.jpg" alt=""
+          class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="card-body">
+          <!-- legendas -->
+          <h5 class="card-title">Prefeitura lança projeto socioassistencial para imigrantes venezuelanos</h5>
+          <p class="card-text">
+            A Prefeitura de Dourados, através da Semas (Secretaria Municipal de Assistência Social), deu início ao
+            “Projeto Bienvenido”, um plano de ação destinado ao atendimento socioassistencial de imigrantes ou
+            refugiados da Venezuela.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Saiba mais...
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xg-4 col-lg-4 col-md-6 col-sm-12">
+      <!--inicio-->
+      <div class="card h-100">
+        <img src="img/venezuela.jpg" alt="" class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="card-body">
+          <h5 class="card-title">VENEZUELA</h5>
+          <p class="card-text">As pessoas continuam deixando a Venezuela para escapar da violência, da insegurança e das
+            ameaças, assim como da falta de alimentos, remédios e serviços essenciais. Com mais de 5 milhões de
+            venezuelanos vivendo no exterior, a grande maioria em países da América Latina e do Caribe, esta se tornou
+            uma das maiores crises de deslocamento do mundo.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.acnur.org/portugues/venezuela/" target="_blank" class="no-style-link"><small
+              class="text-body-secondary">Saiba mais em ACNUR.COM.BR</small></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xg-4 col-lg-4 col-md-6 col-sm-12">
+      <!--inicio-->
+      <div class="card h-100">
+        <img src="img/capa-bn-venezuela.jpg" alt="" class="bd-placeholder-img card-img-top"
+          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="card-body">
+          <h5 class="card-title">Número de refugiados e migrantes da Venezuela ultrapassa 4 milhões, segundo o ACNUR e a
+            OIM</h5>
+          O ritmo do fluxo de saída da Venezuela tem sido impressionante. De cerca de 695 mil no final de 2015, o número
+          de refugiados e migrantes venezuelanos disparou para mais de 4 milhões até meados de 2019, segundo dados de
+          autoridades nacionais de imigração e outras fontes. Em apenas sete meses desde novembro de 2018, o número de
+          refugiados e migrantes aumentou um milhão.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.acnur.org/portugues/2019/06/07/numero-de-refugiados-e-migrantes-da-venezuela-ultrapassa-4-milhoes-segundo-o-acnur-e-a-oim/#"
+            target="_blank" class="no-style-link"><small class="text-body-secondary">Saiba mais em
+              ACNUR.COM.BR</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card mb-3 mx-5">
+    <!-- <img src="" class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">Conheça o Projeto Geoimigrantes:</h5>
+      <p class="card-text">O projeto Geoimigrantes tem como objetivo desenvolver uma plataforma digital para auxiliar os
+        imigrantes venezuelanos residentes em Dourados - MS. </p>
+      <p class="card-text"><small class="text-body-secondary">Saiba Mais...</small></p>
+    </div>
+  </div>
+  <div class="card mb-3 mx-5">
+    <!-- <img src="" class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">Conheça o Projeto Geoimigrantes:</h5>
+      <p class="card-text">O projeto Geoimigrantes tem como objetivo desenvolver uma plataforma digital para auxiliar os
+        imigrantes venezuelanos residentes em Dourados - MS. </p>
+      <p class="card-text"><small class="text-body-secondary">Saiba Mais...</small></p>
+    </div>
+  </div>
+  <hr>
+
+
+
+
+
+  <!--rodape-->
+  <footer class=" mt-5  container-fluid d-flex" style="background-color: #0072BC;">
+    <img src="img/logo.png" alt="Logo" width="60" height="auto"
+      style=" margin-top:2vh;  margin-bottom:2vh; margin-left: 2vh;">
+    <p class="text-light" style=" margin-top:4vh;  margin-left:4vh;"> &copy; 2023 - Desenvolvido por Lorena
+      Missio.<br>IFMS - Campus Dourados </p>
+  </footer>
+  <!--fim-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

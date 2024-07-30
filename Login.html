@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css"><!--link CSS-->
+
+</head>
+<body style="background-color: white;">
+ <!--navegador-->
+
+ <nav class="navbar fixed-top" style="background-color:  #0072BC;">
+  <!--<nav>: Define a seção de navegação.
+  class="navbar fixed-top": Aplica estilos de navbar e fixa a posição no topo da página.
+  style="background-color:  #0072BC;": Define o fundo da barra de navegação com a cor  #0072BC.-->
+
+  <div class=" div1 container-fluid">
+      <!--<div>: Define um contêiner genérico.
+      class="container-fluid": Utiliza um contêiner fluido que se expande para preencher toda a largura disponível.-->
+<img src="img/logo2.png" alt="Logo GeoImigrantes" width="130" height="auto" class="d-inline-block">
+      <!--class="d-inline-block": Aplica o estilo para exibir a imagem como um bloco inline.-->
+      
+      <button class="navbar-toggler button2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar de navegação">
+          <!--<button>: Cria um botão.
+          class="navbar-toggler":Aplica estilos para ser um botão de alternância de navbar.
+          type="button": Especifica que é um botão.
+          data-bs-toggle="offcanvas": Define o comportamento do botão para alternar um offcanvas.
+          data-bs-target="#offcanvasNavbar": Especifica o alvo do offcanvas com o ID offcanvasNavbar.
+          aria-controls="offcanvasNavbar" e aria-label="Alternar de navegação": Atributos acessíveis para controle do offcanvas.-->
+          <span class="navbar-toggler-icon"></span></button>
+          <!--<span>: Define um contêiner genérico em linha.
+class="navbar-toggler-icon": Estiliza o ícone do botão de alternância da navbar.-->
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+ <!-- <div>: Define um contêiner offcanvas.
+  class="offcanvas offcanvas-end": Aplica estilos para posicionar o offcanvas à direita.
+  tabindex="-1": Permite o foco do teclado no elemento, mas não por padrão.
+  id="offcanvasNavbar": Define um ID para referência.
+  aria-labelledby="offcanvasNavbarLabel": Associa um rótulo acessível ao offcanvas. ACESSAR O CONTEUDO DO SITE PELO MENU-->
+  <div class="offcanvas-header cabecalhomenu2">
+      <!--<div>: Define um cabeçalho para o offcanvas.
+      class="offcanvas-header": Estiliza o cabeçalho do offcanvas.-->
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          Menu GeoImigrantes
+        </h5>
+        <!--<h5>: Define um cabeçalho de nível 5.
+        class="offcanvas-title": Estiliza o título do offcanvas.
+        id="offcanvasNavbarLabel": Define um ID para referência.-->
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button></div>
+        <!--<button>: Cria um botão.
+        type="button": Especifica que é um botão.
+        class="btn-close": Estiliza o botão como um botão de fechar padrão.
+        data-bs-dismiss="offcanvas": Define o comportamento do botão para fechar o offcanvas.
+        aria-label="Fechar": Atributo acessível para ação de fechar.-->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item  ">
+                  <a class=" nav-link " href="paginainicial.html" target="_blank">Página Inicial</a><!--ok-->
+                </li>
+                <li class="nav-item apg fw-semibold">
+                  <a class="nav-link"
+                    aria-current="page"
+                    href="Login.html" target="_blank"
+                    >Login</a></li><!--ok-->
+                    <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sobre nós
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="equipe.html"target="_blank">Equipe</a></li>
+              <li><a class="dropdown-item" href="projeto.html"target="_blank">Sobre o projeto</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://www.ifms.edu.br/campi/campus-dourados" target="_blank">Instituição</a><!--ok-->
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Procurar"
+            aria-label="Procurar"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Procurar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--fim do nav-->
+      <!--formulario de cadastro-->
+     <form class="p-3" style="margin-top: 18vh;">
+
+        <div class="my-3  container-fluid border bg-subtle rounded p-3" id="cadastro">
+          <h5 class="my-3"style="color:#0072BC;">Login</h5><hr/>
+    
+        <div class="my-3"id="login">
+        <label for="number"  class="form-label" >CPF:</label>
+        <input class="form-control" type="number"id="cpf"/>
+
+        <div class="form-text">
+        Digite seu CPF, não é necessario carácteres especiais.
+         </div>
+      </div>
+  
+  
+      <div class=" my-3">
+        <label class=" form-label" id="senha"> Senha</label>
+        <input class="form-control"type="password"name="f-senha"
+        <div class="form-text" id="passwordHelpBlock" >
+         Sua senha deve ter entre 8-20 carácteres, conter letras e números, não deve conter espaçoes emojis ou carácteres especiais como(!, $, #).
+        </div>
+    
+      <!-- termos de uso -->
+     <p >Não possui Login, <a href="cadastro.html"  target="_blank" style="text-decoration:none;">Cadastre-se.</a></p>
+  
+        <input class="btn btn-primary mt-3 mb-3" type="submit" name="bnt-entrar" value="entrar"/>
+      </div>
+    </div>
+       </form>
+       <!--rodape-->
+      <footer class=" mt-5  container-fluid d-flex"style="background-color:#0072BC;">
+        <img src="img/logo.png" alt="Logo" width="60" height="auto" style=" margin-top:2vh;  margin-bottom:2vh;">
+        <p class="text-light" style=" margin-top:4vh;  margin-left:4vh;">  &copy; 2023 - Desenvolvido por Lorena Missio.<br>IFMS - Campus Dourados </p>
+      </footer>
+
+
+    
+
+
+
+    
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+</script>
+
+</html>
